@@ -49,14 +49,14 @@ div.first h1 {
     position: relative;
 }
 div.second {
-    display: flex;
-    background-color: #FD8E76;
-}
-div.lovestory{
-    width: 50%;
     
+    background-color: #FD8E76;  
+}
+
+div.lovestory{
+    padding: 15px;    
     text-align: center;
-    font-size: 2vw;
+    font-size: 1.5em;
     margin: auto 0;
 }
 
@@ -67,12 +67,19 @@ ul{
 
 }
 
+/* break points */
+@media screen and (min-width:670px) {
+div.second {
+    display: flex;
+}
+
+div.lovestory{
+    width: 40%;
+}
 div.second img {
     display: block;
-    width: 50%;
+    width: 60%;
 }
 
 
-
-/* break points */
-
+}
