@@ -7,6 +7,9 @@ div, h1 {
 h1 {
     font-family: Nickainley;
 }
+html {
+    scroll-behavior: smooth;
+  }
 @font-face {
     font-family: Nickainley;
     src: url("../font/Nickainley-Normal.otf") format("opentype");
@@ -22,11 +25,45 @@ img {
     max-width: 100%;
     height: auto;
 }
+/* The navigation bar */
+nav {
+    /* overflow: hidden; */
+    /* background-color: #333; */
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    
+  }
+  
+  /* Links inside the navbar */
+  nav a {
+    float: left;
+    display: block;
+    color: black;
+    text-shadow: 1px 1px 14px wheat;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
 
-div.first {
-    
-    
+.spacer
+  {
+      width: 100%;
+      height: 38px;
+  }
+
+.first {
+    text-align: center;
+    background-image: url('../img/img1.jpeg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    /* padding: 89px 15px; */
+    position: relative;
+
 }
+
 div.first h1 {
         
     padding: 0;
@@ -37,17 +74,11 @@ div.first h1 {
     position: absolute;
     bottom: 10px;
 }
+br.responsive {
+    display: none;
+  }
 
-.first {
-    text-align: center;
-    background-image: url('../img/img1.jpeg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 500px;
-    padding: 89px 15px;
-    position: relative;
-}
+
 div.second {
     
     background-color: #FD8E76;  
@@ -60,32 +91,45 @@ div.lovestory{
     margin: auto 0;
 }
 
+
 ul{
     list-style-type: none;
     padding: 0;
-    
+}
 
+.responsivepic {
+    background-image: url('../img/img2.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* break points */
 @media screen and (min-width:670px) {
 
 
-.first {
-    height: 700px;
-}
-
+    .first {
+        height: 600px;
+    }
+    .first h1 {
+        top: 25px;
+        right: 7px;
+    }
+    br.responsive {
+        display: inline;
+    }
     div.second {
-    display: flex;
-}
+        display: flex;
+        height: 50vw;
+    }
 
-div.lovestory{
-    width: 40%;
-}
-div.second img {
-    display: block;
-    width: 60%;
-}
+    div.lovestory{
+        width: 40%;
+    }
+    .responsivepic {
+        
+        width: 60%;
+    }
 
 
 }
