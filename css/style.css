@@ -44,7 +44,7 @@ div.first h1 {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 50vw;
+    height: 500px;
     padding: 89px 15px;
     position: relative;
 }
@@ -69,7 +69,13 @@ ul{
 
 /* break points */
 @media screen and (min-width:670px) {
-div.second {
+
+
+.first {
+    height: 700px;
+}
+
+    div.second {
     display: flex;
 }
 
