@@ -1,7 +1,7 @@
 *{
     box-sizing: border-box;
 }
-div, h1 {
+div, h1,span {
     display: block;
 }
 h1 {
@@ -26,12 +26,17 @@ img {
     height: auto;
 }
 /* The navigation bar */
+
 nav {
-    /* overflow: hidden; */
-    /* background-color: #333; */
+    overflow: hidden;
+    background: #0000004d; /* Green background with 30% opacity */
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
+    z-index: 1;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
     
   }
   
@@ -44,15 +49,18 @@ nav {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-size: 1.5em;
   }
 
 .spacer
-  {
+  {   
+      display: none;
       width: 100%;
       height: 38px;
   }
 
 .first {
+    
     text-align: center;
     background-image: url('../img/img1.jpeg');
     background-position: center center;
@@ -97,22 +105,20 @@ ul{
     padding: 0;
 }
 
-.responsivepic {
-    background-image: url('../img/img2.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 
 /* break points */
-@media screen and (min-width:670px) {
+@media screen and (min-width:800px) {
 
-
+    nav {
+        display: flex;
+    }
+    
     .first {
         height: 600px;
     }
     .first h1 {
-        top: 25px;
+        top: 60px;
         right: 7px;
     }
     br.responsive {
@@ -126,9 +132,19 @@ ul{
     div.lovestory{
         width: 40%;
     }
+    .second img {
+        display: none;
+    }
     .responsivepic {
         
         width: 60%;
+    }
+
+    .responsivepic {
+        background-image: url('../img/img2.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
 
