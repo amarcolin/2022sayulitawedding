@@ -20,7 +20,10 @@ html {
     font-weight: bold;
     src: url("../font/Nickainley-Normal.otf") format("opentype");
 }
-
+body {
+    max-width: 1080px;
+    margin: auto;
+}
 img {
     max-width: 100%;
     height: auto;
@@ -33,6 +36,7 @@ nav {
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
+    max-width: 1080px;
     z-index: 1;
     display: none;
     flex-wrap: wrap;
@@ -127,6 +131,7 @@ ul{
     div.second {
         display: flex;
         height: 50vw;
+        max-height: 543px;
     }
 
     div.lovestory{
@@ -148,4 +153,10 @@ ul{
     }
 
 
+}
+
+@media screen and (min-width:1080px) {
+    .first h1{
+        font-size: 108px!important;
+    }
 }
