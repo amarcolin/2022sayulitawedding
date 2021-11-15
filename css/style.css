@@ -21,7 +21,7 @@ html {
     src: url("../font/Nickainley-Normal.otf") format("opentype");
 }
 body {
-    max-width: 1080px;
+    max-width: 1900px;
     margin: auto;
 }
 img {
@@ -36,7 +36,7 @@ nav {
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
-    max-width: 1080px;
+    max-width: 1900px;
     z-index: 1;
     display: none;
     flex-wrap: wrap;
@@ -103,6 +103,10 @@ div.lovestory{
     margin: auto 0;
 }
 
+.fourth{
+    background-color: #FFBD59;
+}
+
 
 ul{
     list-style-type: none;
@@ -119,7 +123,7 @@ ul{
     }
     
     .first {
-        height: 600px;
+        height: 650px;
     }
     .first h1 {
         top: 60px;
@@ -128,25 +132,37 @@ ul{
     br.responsive {
         display: inline;
     }
-    div.second {
+    div.second,.fourth, .fifth {
         display: flex;
         height: 50vw;
-        max-height: 543px;
+        max-height: 994px;
     }
 
     div.lovestory{
         width: 40%;
     }
-    .second img {
+    .second img, .fourth img, .fifth img {
         display: none;
     }
     .responsivepic {
         
         width: 60%;
     }
+    .second .responsivepic {
+      background-image: url('../img/img2.jpg');
+    }
+
+    .fourth .responsivepic {
+        background-image: url('../img/img4.jpg');
+    }
+
+    .fifth .responsivepic {
+        background-image: url('../img/img5.jpg')
+    }
+
 
     .responsivepic {
-        background-image: url('../img/img2.jpg');
+        
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
