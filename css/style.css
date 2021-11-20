@@ -20,6 +20,14 @@ html {
     font-weight: bold;
     src: url("../font/Nickainley-Normal.otf") format("opentype");
 }
+/* HeyGotcha-Regular.otf */
+@font-face {
+    font-family: HeyGotcha;
+    font-weight: bold;
+    src: url("../font/HeyGotcha-Regular.otf") format("opentype");
+}
+
+
 body {
     max-width: 1900px;
     margin: auto;
@@ -28,6 +36,16 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+
+.responsivepic {
+        
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 /* The navigation bar */
 
 nav {
@@ -103,6 +121,29 @@ div.lovestory{
     margin: auto 0;
 }
 
+.third {
+    font-family: HeyGotcha;
+    text-align: center;
+    background-image: url('../img/img3.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    /* padding: 89px 15px; */
+    position: relative;
+    display: flex;
+}
+.third h1 {
+    font-family: HeyGotcha;
+}
+
+.third .celebration {
+    margin: auto;
+    max-width: 300px;
+    text-shadow: 1px 1px 14px wheat;
+}
+
+
 .fourth{
     background-color: #FFBD59;
 }
@@ -122,7 +163,7 @@ ul{
         display: flex;
     }
     
-    .first {
+    .first, .third {
         height: 650px;
     }
     .first h1 {
@@ -159,15 +200,6 @@ ul{
     .fifth .responsivepic {
         background-image: url('../img/img5.jpg')
     }
-
-
-    .responsivepic {
-        
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
 
 }
 
