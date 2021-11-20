@@ -135,6 +135,16 @@ div.lovestory{
 }
 .third h1 {
     font-family: HeyGotcha;
+    font-size: 4vw
+}
+
+.third h2 {
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+.third p {
+    font-size: 2vw;
 }
 
 .third .celebration {
@@ -163,7 +173,7 @@ ul{
         display: flex;
     }
     
-    .first, .third {
+    .first {
         height: 650px;
     }
     .first h1 {
@@ -185,6 +195,11 @@ ul{
     .second img, .fourth img, .fifth img {
         display: none;
     }
+
+    .third {
+       height: 700px;
+    }
+
     .responsivepic {
         
         width: 60%;
