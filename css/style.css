@@ -96,13 +96,14 @@ nav {
 
 div.first h1 {
         
-    padding: 0;
+    padding: 0 0 0 15px;
     margin: 0;
     font-size:10vw;
     text-shadow: 1px 1px 14px wheat;
     color: black;
     position: absolute;
     bottom: 10px;
+    display: flex;
 }
 br.responsive {
     display: none;
@@ -119,8 +120,18 @@ div.lovestory{
     text-align: center;
     font-size: 1.5em;
     margin: auto 0;
+    font-family: HeyGotcha;
+    color: #004AAD;
 }
 
+.lovestory li:nth-child(even){
+    font-size: large;
+    padding: 0 0 11px 0;
+}
+
+.lovestory li:nth-child(odd){
+    padding: 0 0 2px 0;
+}
 .third {
     font-family: HeyGotcha;
     text-align: center;
@@ -135,16 +146,16 @@ div.lovestory{
 }
 .third h1 {
     font-family: HeyGotcha;
-    font-size: 4vw
+    font-size: 2em
 }
 
 .third h2 {
-    font-size: 3vw;
+    font-size: 2em;
     font-weight: bold;
 }
 
 .third p {
-    font-size: 2vw;
+    font-size: ;
 }
 
 .third .celebration {
