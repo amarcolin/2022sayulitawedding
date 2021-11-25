@@ -146,20 +146,24 @@ div.lovestory{
 }
 .third h1 {
     font-family: HeyGotcha;
-    font-size: 2em
+    font-size: 1.2em;
+    margin: 1px 0;
 }
 
 .third h2 {
-    font-size: 2em;
+
+    font-size: 1.2em;
     font-weight: bold;
+    margin: 40 px 0 2px;
 }
 
 .third p {
     font-size: ;
+    margin: 0;
 }
 
 .third .celebration {
-    margin: auto;
+    margin:  0 auto;
     max-width: 300px;
     text-shadow: 1px 1px 14px wheat;
 }
@@ -169,10 +173,23 @@ div.lovestory{
     background-color: #FFBD59;
 }
 
+.fourth h1 {
+    color: #D22365;
+}
+
 
 ul{
     list-style-type: none;
     padding: 0;
+}
+
+.fifth {
+    background-color: #FFD65C;
+
+}
+
+.fifth h1 {
+    color: #FF1616;
 }
 
 
