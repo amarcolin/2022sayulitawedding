@@ -35,6 +35,7 @@ body {
 img {
     max-width: 100%;
     height: auto;
+    display: block;
 }
 
 
@@ -112,7 +113,7 @@ br.responsive {
 
 div.second {
     
-    background-color: #FD8E76;  
+    background-color: #FD8E76;
 }
 
 div.lovestory{
@@ -133,16 +134,7 @@ div.lovestory{
     padding: 0 0 2px 0;
 }
 .third {
-    font-family: HeyGotcha;
-    text-align: center;
-    background-image: url('../img/img3.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 500px;
-    /* padding: 89px 15px; */
-    position: relative;
-    display: flex;
+    background-color: #FF914D;
 }
 .third h1 {
     font-family: HeyGotcha;
@@ -152,9 +144,9 @@ div.lovestory{
 
 .third h2 {
 
-    font-size: 1.2em;
+    font-size: 1.5em;
     font-weight: bold;
-    margin: 40 px 0 2px;
+    margin: 0 px 0 2px;
 }
 
 .third p {
@@ -163,8 +155,8 @@ div.lovestory{
 }
 
 .third .celebration {
-    margin:  0 auto;
-    max-width: 300px;
+    padding: 40px auto 0;
+    
     text-shadow: 1px 1px 14px wheat;
 }
 
@@ -211,7 +203,7 @@ ul{
     br.responsive {
         display: inline;
     }
-    div.second,.fourth, .fifth {
+    div.second,.fourth, .fifth , .third{
         display: flex;
         height: 50vw;
         max-height: 994px;
@@ -220,17 +212,20 @@ ul{
     div.lovestory{
         width: 40%;
     }
-    .second img, .fourth img, .fifth img {
+    .second img, .third img, .fourth img, .fifth img {
         display: none;
     }
 
-    .third {
+    /* .third {
        height: 700px;
-    }
+    } */
 
     .responsivepic {
         
         width: 60%;
+    }
+    .third .responsivepic {
+        background-image: url('../img/img3.jpg');
     }
     .second .responsivepic {
       background-image: url('../img/img2.jpg');
