@@ -27,6 +27,10 @@ html {
     src: url("../font/HeyGotcha-Regular.otf") format("opentype");
 }
 
+li {
+    letter-spacing: 1.2px;
+}
+
 
 body {
     max-width: 1900px;
@@ -125,12 +129,12 @@ div.lovestory{
     color: #004AAD;
 }
 
-.lovestory li:nth-child(even){
+.lovestory > ul > li:nth-child(even), .lovestory > ul > li:nth-child(even) > ul > li  {
     font-size: large;
     padding: 0 0 11px 0;
 }
 
-.lovestory li:nth-child(odd){
+.lovestory > ul > li:nth-child(odd) {
     padding: 0 0 2px 0;
 }
 .third {
